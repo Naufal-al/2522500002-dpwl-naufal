@@ -83,5 +83,5 @@ Sisipkan gambar yang relevan dari folder dokumentasi/ dengan perintah:
 ![gambar1](dokumentasi/gambar3.png)
 
 
-9. Kesimpulan P2
+9. Kesimpulan P2 
 Kerangka kerja PHP MVC kustom pada P2 telah berhasil mengelola front controller, pemetaan rute dinamis, serta pemisahan logika (Controller) dan tampilan (View). Integrasi pemrosesan basis data melalui Model akan diimplementasikan pada P3.
