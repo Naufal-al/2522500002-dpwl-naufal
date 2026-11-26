@@ -1,0 +1,144 @@
+/* RENTAL ADMIN - BLUE MODERN THEME
+   Styling only: preserves existing routes, logic, forms and database behavior. */
+:root{
+  --rental-blue:#1769c2;
+  --rental-blue-dark:#0f4f98;
+  --rental-blue-soft:#eaf3ff;
+  --rental-ink:#1f2f43;
+  --rental-muted:#718096;
+  --rental-border:#dce6f1;
+  --rental-bg:#f4f7fb;
+}
+html{min-height:100%}
+body.skin-blue{
+  background:var(--rental-bg);color:var(--rental-ink);
+  font-family:"Source Sans Pro","Segoe UI",Arial,sans-serif;
+  font-size:14px;-webkit-font-smoothing:antialiased
+}
+.skin-blue .main-header .logo,.skin-blue .main-header .navbar{
+  background-color:var(--rental-blue);border-color:var(--rental-blue)
+}
+.skin-blue .main-header .logo:hover,.skin-blue .main-header .navbar .sidebar-toggle:hover{
+  background-color:var(--rental-blue-dark)
+}
+.skin-blue .main-header .logo{font-weight:700;letter-spacing:.2px}
+.skin-blue .main-header .navbar .nav>li>a{color:#fff}
+.skin-blue .main-sidebar,.skin-blue .left-side{background:#142b46}
+.skin-blue .sidebar-menu>li.header{
+  color:#a9c8eb;background:#10243b;letter-spacing:.8px;font-size:11px;
+  padding:14px 18px 10px
+}
+.skin-blue .sidebar-menu>li>a{
+  color:#e3efff;padding:13px 16px;border-left:3px solid transparent;
+  transition:background .18s ease,border-color .18s ease
+}
+.skin-blue .sidebar-menu>li>a>.fa,.skin-blue .sidebar-menu>li>a>.glyphicon,
+.skin-blue .sidebar-menu>li>a>.ion{width:22px}
+.skin-blue .sidebar-menu>li:hover>a,.skin-blue .sidebar-menu>li.active>a{
+  color:#fff;background:rgba(255,255,255,.09);border-left-color:#69b5ff
+}
+.skin-blue .user-panel{padding:18px 12px 14px}
+.skin-blue .user-panel>.info{color:#f4f9ff}
+.skin-blue .user-panel>.info a{color:#b7dcff}
+.skin-blue .sidebar-form{margin:10px 12px 16px}
+.skin-blue .sidebar-form .form-control,.skin-blue .sidebar-form .btn{
+  background:#203c5b;border-color:#345577;color:#eef6ff
+}
+.content-wrapper,.right-side{background:var(--rental-bg)}
+.content-header{padding:22px 24px 10px}
+.content-header>h1{color:#203650;font-size:25px;font-weight:650}
+.content-header>h1>small{color:var(--rental-muted);font-size:13px}
+.content{padding:12px 24px 28px}
+.box{
+  border:1px solid var(--rental-border);border-top:3px solid #d5e4f5;
+  border-radius:10px;box-shadow:0 4px 16px rgba(22,61,105,.06);
+  overflow:hidden;margin-bottom:22px
+}
+.box.box-primary,.box.box-success,.box.box-info{border-top-color:var(--rental-blue)}
+.box-header{padding:16px 18px;background:#fff}
+.box-header.with-border{border-bottom:1px solid var(--rental-border)}
+.box-title{color:#243b56;font-size:17px;font-weight:650}
+.box-body{padding:18px;background:#fff}
+.box-footer{padding:14px 18px;background:#f9fbfe;border-top:1px solid var(--rental-border)}
+.p9-panel,.p10-panel{border-radius:10px}
+.table{margin-bottom:0;color:#35465b}
+.table>thead>tr>th{
+  background:#edf5ff;color:#31577e;border-bottom:1px solid #d9e8f8;
+  font-weight:650;vertical-align:middle;white-space:nowrap
+}
+.table>tbody>tr>td,.table>tbody>tr>th{vertical-align:middle}
+.table-bordered{border-color:var(--rental-border)}
+.table-bordered>thead>tr>th,.table-bordered>tbody>tr>td,.table-bordered>tbody>tr>th{border-color:var(--rental-border)}
+.table-striped>tbody>tr:nth-of-type(odd){background:#fbfdff}
+.table-hover>tbody>tr:hover{background:#eff6ff}
+.table-responsive{border:0}
+.form-control{border:1px solid #d5e1ee;border-radius:7px;box-shadow:none;min-height:36px}
+.form-control:focus{border-color:#6aa9e8;box-shadow:0 0 0 3px rgba(23,105,194,.12)}
+label{color:#405772;font-weight:600}
+.btn{border-radius:7px;font-weight:600;padding:7px 13px;transition:all .15s ease}
+.btn-success,.skin-blue .btn-success{background:var(--rental-blue);border-color:var(--rental-blue);color:#fff}
+.btn-success:hover,.btn-success:focus{background:var(--rental-blue-dark);border-color:var(--rental-blue-dark);color:#fff}
+.btn-primary{background:#1769c2;border-color:#1769c2}
+.btn-primary:hover,.btn-primary:focus{background:#0f4f98;border-color:#0f4f98}
+.btn-info{background:#2588d8;border-color:#2588d8}
+.btn-default{border-color:#d5e1ee;color:#405772}
+.alert{border-radius:8px;border-width:0 0 0 4px;box-shadow:0 2px 8px rgba(20,55,95,.035)}
+.alert-success{background:#eaf3ff;border-color:#1769c2;color:#234d78}
+.alert-success h4,.alert-success strong{color:#174f8e}
+.label-success,.badge-success,.bg-green,.callout.callout-success{background-color:#1769c2!important;color:#fff!important}
+.label,.badge{border-radius:20px;padding:4px 9px;font-weight:600}
+.pagination>li>a,.pagination>li>span{color:var(--rental-blue);border-color:var(--rental-border)}
+.pagination>.active>a,.pagination>.active>span,.pagination>.active>a:hover,.pagination>.active>span:hover{
+  background:var(--rental-blue);border-color:var(--rental-blue)
+}
+.dataTables_wrapper .dataTables_filter input,.dataTables_wrapper .dataTables_length select{
+  border:1px solid #d5e1ee;border-radius:6px;padding:5px 8px
+}
+.dataTables_wrapper .dataTables_filter input:focus{outline:0;border-color:#6aa9e8}
+.dl-horizontal dt{color:#718096;font-weight:600}
+.dl-horizontal dd{color:#243b56;margin-bottom:9px}
+.main-footer{background:#fff;border-top:1px solid var(--rental-border);color:#718096;padding:17px 24px}
+.main-footer strong{color:#405772}
+.p10-total{color:var(--rental-blue-dark);font-size:18px;font-weight:700}
+.p10-panel{border:1px solid var(--rental-border);background:#fff;padding:18px}
+.stat-card{border-radius:12px;box-shadow:0 4px 15px rgba(22,61,105,.07)}
+/* Cetak dokumen transaksi */
+@media print{
+ .main-header,.main-sidebar,.main-footer,.content-header,.no-print,.box-footer,.btn,.sidebar,.control-sidebar{display:none!important}
+ .content-wrapper,.right-side{margin:0!important;min-height:0!important;background:#fff!important}
+ .content{padding:0!important}
+ .box{border:1px solid #ccc!important;box-shadow:none!important;page-break-inside:avoid}
+ body{background:#fff!important}
+}
+@media(max-width:767px){
+ .content-header{padding:16px 15px 8px}
+ .content-header>h1{font-size:21px}
+ .content{padding:10px 12px 20px}
+ .box-header,.box-body{padding:14px}
+ .table{font-size:12px}
+ .main-footer{padding:14px 15px}
+}
+
+
+/* Force all success/green accents to Rental blue across admin modules */
+.skin-blue .btn-success,.skin-blue a.btn-success,.btn-success,
+.p10-btn,.p10-action,.tenant-page .stat-green .stat-icon{
+ background:#1769c2!important;border-color:#1769c2!important;color:#fff!important
+}
+.skin-blue .btn-success:hover,.btn-success:hover,.p10-btn:hover,.p10-action:hover{
+ background:#0f4f98!important;border-color:#0f4f98!important;color:#fff!important
+}
+.alert-success,.callout-success,.bg-success,.label-success,.badge-success{
+ background-color:#eaf3ff!important;border-color:#1769c2!important;color:#174f8e!important
+}
+.alert-success .close{color:#174f8e!important}
+.box-success,.box.box-success{border-top-color:#1769c2!important}
+.table tr.success>td,.table tr.success>th,.table>tbody>tr.success>td{
+ background:#eaf3ff!important;color:#244f7c!important
+}
+.p10-banner,.p10-detail .p10-head{
+ background:linear-gradient(120deg,#164f91,#287fd0)!important
+}
+.p10-table th,.p10-detail .table th{background:#edf5ff!important;color:#31577e!important}
+.p10-code,.p10-amount,.p10-detail .p10-total,.p10-detail .p10-code{color:#1769c2!important}
+.p10-pill,.p10-detail .p10-status{background:#eaf3ff!important;color:#1b5fa8!important}

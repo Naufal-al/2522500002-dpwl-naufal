@@ -1,0 +1,3 @@
+Options -Indexes
+# Semua akses HTTP langsung ditolak; file dikirim melalui controller setelah otorisasi.
+Require all denied
